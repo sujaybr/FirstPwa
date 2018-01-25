@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Slideout Demo</title>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel = "stylesheet" href="../static/semantic-UI/semantic.min.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+
+      .slideout-menu {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 256px;
+        min-height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        z-index: 0;
+        display: none;
+      }
+
+      .slideout-menu-left {
+        left: 0;
+      }
+
+      .slideout-menu-right {
+        right: 0;
+      }
+
+      .slideout-panel {
+        position: relative;
+        z-index: 1;
+        will-change: transform;
+        background-color: #FFF; /* A background-color is required */
+        min-height: 100vh;
+      }
+
+      .slideout-open,
+      .slideout-open body,
+      .slideout-open .slideout-panel {
+        overflow: hidden;
+      }
+
+      .slideout-open .slideout-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav id="menu" style="background:#E8F8F5;padding:10px;">
+      <h2>Menu</h2>
+    </nav>
+
+    <main id="panel" style="padding:10px;background:#F5EEF8">
+      <header>
+        <table>
+          <tr>
+            <td>
+              <button class="toggle-button ui button" style="border-radius:40px;padding:8px;margin:8px;">
+                <i class="fa fa-bars" aria-hidden="true"></i> 
+              </button>
+            </td>
+            <td>
+              <h2>adsf</h2>
+            </td>
+          </tr>
+        </table>
+      </header>
+        <div class="ui top attached tabular menu">
+          <a class="item active" data-tab="first">First</a>
+          <a class="item" data-tab="second">Second</a>
+          <a class="item" data-tab="third">Third</a>
+        </div>
+        <div class="ui bottom attached tab segment active" data-tab="first">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="second">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.amet
+        </div>
+        <div class="ui bottom attached tab segment" data-tab="third">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est Lorem ipsum dolor sit amet.amet
+        </div>
+    </main>
+
+    <footer>asdfasdf</footer>
+
+
+    <script src="../static/slideout-1.0.1/dist/slideout.min.js"></script>
+    <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+
+       // Toggle button
+       document.querySelector('.toggle-button').addEventListener('click', function() {
+       slideout.toggle();
+      });
+    </script>
+
+  </body>
+</html>
