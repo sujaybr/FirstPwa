@@ -10,6 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel = "stylesheet" href="../static/semantic-UI/semantic.min.css">
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/static/images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+    <link rel="manifest" href="static/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script type="text/javascript" src="../static/app.js"></script>
     <style>
       body {
         width: 100%;
@@ -63,20 +82,20 @@
   </head>
   <body>
 
-    <nav id="menu" style="background:#E8F8F5;padding:10px;text-align:center;">
-      <h2>Menu</h2>
-          <hr/>
-      <table>
-        <tr> <td><a>One</a></td> </tr>
-        <tr> <td><a>Two</a></td> </tr>
-        <tr> <td><a>Three</a></td> </tr>
-        <tr> <td><a>Four</a></td> </tr>
-        <tr> <td><a>Five</a></td> </tr>
+    <nav id="menu" style="background:#E8F8F5;text-align:center;">
+      <div style="width:100%;height:7.6%;background:#EEE;padding:10px;">
+      </div>
+      <table style="padding:10px;">
+        <tr> <td><a href="/templates/one.html">One</a></td> </tr>
+        <tr> <td><a href="two.html">Two</a></td> </tr>
+        <tr> <td><a href="three.html">Three</a></td> </tr>
+        <tr> <td><a href="index.html">Four</a></td> </tr>
+        <tr> <td><a href="two.html">Five</a></td> </tr>
       </table>
     </nav>
 
-    <main id="panel" style="padding:10px;background:#F4ECF7;height:100%;">
-      <header>
+    <main id="panel" style="background:#F4ECF7;height:100%;">
+      <header style="background:#E8F8F5;">
         <table>
           <tr>
             <td>
@@ -90,32 +109,34 @@
           </tr>
         </table>
       </header>
-        <div class="ui top attached tabular menu">
-          <a class="item active" data-tab="first">First</a>
-          <a class="item" data-tab="second">Second</a>
-          <a class="item" data-tab="third">Third</a>
-        </div>
-        <div class="ui bottom attached tab segment active" data-tab="first" style="height:80%;">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-        </div>
-        <div class="ui bottom attached tab segment" data-tab="second">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet.amet
-        </div>
-        <div class="ui bottom attached tab segment" data-tab="third">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-          no sea takimata sanctus est Lorem ipsum dolor sit amet.amet
+        <div style="padding:10px;">
+            <div class="ui top attached tabular menu">
+              <a class="item active" data-tab="first">First</a>
+              <a class="item" data-tab="second">Second</a>
+              <a class="item" data-tab="third">Third</a>
+            </div>
+            <div class="ui bottom attached tab segment active" data-tab="first" style="height:80%;">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+              vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+              no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+              vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+              no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="second">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+              vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+              no sea takimata sanctus est Lorem ipsum dolor sit amet.amet
+            </div>
+            <div class="ui bottom attached tab segment" data-tab="third">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+              vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+              no sea takimata sanctus est Lorem ipsum dolor sit amet.amet
+            </div>
         </div>
     </main>
 
